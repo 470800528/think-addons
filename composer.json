@@ -1,0 +1,26 @@
+{
+    "name": "yjh/think-addons",
+    "description": "addons package for tp",
+    "homepage": "https://github.com/470800528/think-addons",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "yjh",
+            "email": "470800528@qq.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/470800528/think-addons/issues"
+    },
+    "require": {
+        "php": ">=8.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\": "src/"
+        },
+        "files": [
+            "src/common.php"
+        ]
+    }
+}
