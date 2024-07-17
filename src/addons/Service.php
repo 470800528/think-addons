@@ -63,10 +63,8 @@ class Service
         // 默认启用该插件
         $info = get_addon_info($name);
         try {
-            /*if ($info['status']) {
-            $info['status'] = 0;
+            $info['init'] = 1;
             set_addon_info($name, $info);
-            }*/
             // 执行安装脚本
             $class = get_addon_class($name);
             if (class_exists($class)) {
@@ -383,10 +381,8 @@ class Service
             try {
                 // 默认启用该插件
                 $info = get_addon_info($name);
-                /*if ($info['status']) {
-                $info['status'] = 0;
+                $info['init'] = 1;
                 set_addon_info($name, $info);
-                }*/
                 // 执行安装脚本
                 $class = get_addon_class($name);
                 if (class_exists($class)) {
