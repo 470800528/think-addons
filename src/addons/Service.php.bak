@@ -143,7 +143,7 @@ class Service
         }
 
         //备份冲突文件
-        if (config::get('yu.backup_global_files')) {
+        if (config::get('yzn.backup_global_files')) {
             $conflictFiles = self::getGlobalFiles($name, true);
             if ($conflictFiles) {
                 $zip = new ZipFile();
