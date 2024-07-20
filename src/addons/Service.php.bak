@@ -217,7 +217,7 @@ class Service
             self::noconflict($name);
         }
 
-        if (config::get('yu.backup_global_files')) {
+        if (config::get('yzn.backup_global_files')) {
             //仅备份修改过的文件
             $conflictFiles = self::getGlobalFiles($name, true);
             if ($conflictFiles) {
